@@ -6,5 +6,10 @@ function calcularconsumo() {
 
     consumo = peso / (altura * altura)
 
-    document.getElementById("nome").innerHTML = consumo
+ if(consumo <= 18.5) {
+     document.getElementById('nome').textContent = consumo + " Você está abaixo do peso!"
+ }
+ else if((consumo > 18.5) && (consumo <= 24.9)) {
+     document.getElementById('nome').textContent = consumo + " Você está no peso ideal!" 
+ }
 }
